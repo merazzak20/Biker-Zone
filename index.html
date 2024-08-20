@@ -4,8 +4,313 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biker Zone</title>
-</head>
-<body>
+    <!-- Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              primary: '#E76F51',
+              'back-primary': 'rgba(231, 111, 81, 0.1)'
+            }
+          }
+        }
+      }
+    </script>
+
+    <Style>
+        .font-poppins{
+            font-family: "Poppins", sans-serif;
+        }
+    </Style>
     
+</head>
+<body class="font-poppins">
+    <header class="container mx-auto px-10 mb-20">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                          <li><a>Home</a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>News</a></li>
+                          <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                      <a class="text-xl font-bold">Biker Zone</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+                      </ul>
+                </div>
+                <div class="">
+                      <a class="btn bg-primary text-white px-10">Login</a>
+                </div>
+            </div>
+        </nav>
+        <div id="hero" class="bg-back-primary py-20 lg:h-[550px]">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <div class="flex flex-col lg:flex-row items-center px-24">
+                    <!-- text box -->
+                     <div class="space-y-5 flex-1">
+                        <h1 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+                        <p>Amet minim mollit non deserunt ullamco 
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit
+                        </p>
+                        <button class="btn bg-primary text-white px-10">Purchase</button>
+                     </div>
+                     <!-- Image -->
+                     <div class="flex-1 w-[400px]"><img
+                        src="./images/slider/bike1.png"
+                        class="mx-auto"/></div>
+                  </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="flex flex-col lg:flex-row items-center px-24">
+                        <!-- text box -->
+                         <div class="space-y-5 flex-1">
+                            <h1 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+                            <p>Amet minim mollit non deserunt ullamco 
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit
+                            </p>
+                            <button class="btn bg-primary text-white px-10">Purchase</button>
+                         </div>
+                         <!-- Image -->
+                         <div class="flex-1 w-[400px]"><img
+                            src="./images/slider/bike2.png"
+                            class="mx-auto"/></div>
+                      </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="flex flex-col lg:flex-row items-center px-24">
+                        <!-- text box -->
+                         <div class="space-y-5 flex-1">
+                            <h1 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+                            <p>Amet minim mollit non deserunt ullamco 
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit
+                            </p>
+                            <button class="btn bg-primary text-white px-10">Purchase</button>
+                         </div>
+                         <!-- Image -->
+                         <div class="flex-1 w-[400px]"><img
+                            src="./images/slider/bike3.png"
+                            class="mx-auto"/></div>
+                      </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="featured" class="container mx-auto px-10 mb-20">
+            <div class="section-info mb-10">
+                <h2 class="text-5xl font-bold text-center">Fetured Bikes In This Year</h2>
+                <p class="text-primary text-center">Best bike collection</p>
+                
+            </div>
+            <div class="images grid grid-cols-1 lg:grid-cols-3 gap-y-5 lg:gap-y-0 mt-10">
+                <div class="img mx-auto">
+                    <img src="./images/others/feature-bike.png" alt="">
+                </div>
+                <div class="img mx-auto">
+                    <img src="./images/others/feature-bike.png" alt="">
+                </div>
+                <div class="img mx-auto">
+                    <img src="./images/others/feature-bike.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="container mx-auto px-10 mb-20">
+            <div class="section-info mb-10">
+                <h2 class="text-5xl font-bold text-center">latest News</h2>               
+            </div>
+            <div class="cards grid grid-cols-1 gap-y-6 gap-x-6 lg:grid-cols-3 lg:gap-y-0">
+                  <div class="card bg-base-100 w-full shadow-md pt-4">
+                    <figure class="px-5">
+                      <img
+                        src="./images/others/latest1.png"
+                        alt="Shoes" class="w-full" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-2xl">Ducati XDIAVEL S-73</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                      <div class="card-actions justify-start">
+                        <button class="btn btn-outline text-primary hover:bg-primary hover:text-white hover:border-0 px-5 mt-3">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-base-100 w-full shadow-md pt-4">
+                    <figure class="px-5">
+                        <img
+                          src="./images/others/latest2.png"
+                          alt="Shoes" class="w-full" />
+                      </figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-2xl">Ducati XDIAVEL S-73</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                      <div class="card-actions justify-start">
+                        <button class="btn btn-outline text-primary hover:bg-primary hover:text-white hover:border-0 px-5 mt-3">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-base-100 w-full shadow-md pt-4">
+                    <figure class="px-5">
+                        <img
+                          src="./images/others/latest3.png"
+                          alt="Shoes" class="w-full" />
+                      </figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-2xl">Ducati XDIAVEL S-73</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                      <div class="card-actions justify-start">
+                        <button class="btn btn-outline text-primary hover:bg-primary hover:text-white hover:border-0 px-5 mt-3">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <section id="feadback" class="container mx-auto px-10 mb-20">
+            <div class="section-info mb-10">
+                <h2 class="text-5xl font-bold text-center">Happy <span class="text-primary">Clients says</span></h2>               
+            </div>
+            <div class="f-cards grid grid-cols-1 lg:grid-cols-3">
+                <div class="f-card p-10  text-center mx-auto">
+                    <div class="card bg-base-100 w-full shadow-md">
+                        <div class="card-body">
+                            <div class="avatar justify-center">
+                                <div class="w-24 rounded-full">
+                                  <img src="./images/others/user-1.png" />
+                                </div>
+                              </div>
+                          <p class="mx-auto w-5/6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quod facere aperiam unde libero dignissimos illum esse magni laboriosam ipsa.</p>
+                          <div class="rating inline">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input
+                              type="radio"
+                              name="rating-2"
+                              class="mask mask-star-2 bg-orange-400"
+                              checked="checked" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          </div>
+                          <h5 class="text-lg font-bold mt-2">Abdur Razzak</h5>
+                          <p>Designer</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="f-card p-10  text-center mx-auto">
+                    <div class="card bg-base-100 w-full shadow-md">
+                        <div class="card-body">
+                            <div class="avatar justify-center">
+                                <div class="w-24 rounded-full">
+                                  <img src="./images/others/user-2.png" />
+                                </div>
+                              </div>
+                          <p class="mx-auto w-5/6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quod facere aperiam unde libero dignissimos illum esse magni laboriosam ipsa.</p>
+                          <div class="rating inline">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input
+                              type="radio"
+                              name="rating-2"
+                              class="mask mask-star-2 bg-orange-400"
+                              checked="checked" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          </div>
+                          <h5 class="text-lg font-bold mt-2">Jessy Nill</h5>
+                          <p>Developer</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="f-card p-10  text-center mx-auto">
+                    <div class="card bg-base-100 w-full shadow-md">
+                        <div class="card-body">
+                            <div class="avatar justify-center">
+                                <div class="w-24 rounded-full">
+                                  <img src="./images/others/user-3.png" />
+                                </div>
+                              </div>
+                          <p class="mx-auto w-5/6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quod facere aperiam unde libero dignissimos illum esse magni laboriosam ipsa.</p>
+                          <div class="rating inline">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input
+                              type="radio"
+                              name="rating-2"
+                              class="mask mask-star-2 bg-orange-400"
+                              checked="checked" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          </div>
+                          <h5 class="text-lg font-bold mt-2">Jheny Dee</h5>
+                          <p>Designer</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-black container px-10 footer footer-center bg-base-200 text-base-content p-10">
+        <nav class="grid grid-flow-col gap-4">
+            <a class="link link-hover text-white">About us</a>
+            <a class="link link-hover text-white">Contact</a>
+            <a class="link link-hover text-white">Jobs</a>
+            <a class="link link-hover text-white">Press kit</a>
+          </nav>
+          <aside>
+            <p class="text-white">Copyright © All right reserved by <span class="text-primary font-bold">Abdur Razzak</span> </p>
+          </aside>
+
+    </footer>
 </body>
 </html>
